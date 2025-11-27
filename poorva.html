@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAAN JAO NA MERE KUCHU PUCHUU</title>
+<style>
+body {
+  margin: 0;
+  background-color: #800020;
+  font-family: fantasy;
+  text-align: center;
+  color: #f5e663;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h1 { margin-bottom: 1rem; color: #f9d71c; }
+button {
+  background-color: #fff176;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: fantasy;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+button:hover { background-color: #ffe54c; }
+#sorryMessage {
+  display: none;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #fff176;
+}
+.polaroid {
+  background: white;
+  padding: 10px 10px 25px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 250px;
+  margin-top: 20px;
+}
+.polaroid img { width: 100%; height: auto; }
+.emoji { font-size: 2rem; }
+</style>
+</head>
+<body>
+<h1>MAAN JAO NA MERE KUCHU PUCHUU</h1>
+<button id="touchBtn">MAI POORVA KI BUI HU, TOUCH ME</button>
+<div id="sorryMessage">
+  SORRYYY MAAUUU MAAAANNN JAAOOO AUR MUJHE BHEJ DOO PRACTICALSSS, PLEASEEEEE <span class="emoji">😢</span>
+</div>
+<div class="polaroid">
+  <img src="pookie.png" alt="Polaroid image">
+</div>
+
+<script>
+document.getElementById('touchBtn').addEventListener('click', () => {
+  document.getElementById('sorryMessage').style.display = 'block';
+});
+</script>
+</body>
+</html>
